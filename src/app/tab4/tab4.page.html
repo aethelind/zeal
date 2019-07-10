@@ -4,4 +4,29 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content> </ion-content>
+<ion-content>
+  <ion-list>
+    <ion-list-header>
+      App Settings
+    </ion-list-header>
+    <ion-item>
+      <ion-label>Notifications</ion-label>
+      <ion-toggle [(ngModel)]="notifications" color="success"></ion-toggle>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Background App Refresh</ion-label>
+      <ion-toggle [(ngModel)]="background" color="success"></ion-toggle>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Cellular Data</ion-label>
+      <ion-toggle [(ngModel)]="data" color="success"></ion-toggle>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Location Access</ion-label>
+      <ion-toggle [(ngModel)]="location" color="success"></ion-toggle>
+    </ion-item>
+  </ion-list>
+</ion-content>
