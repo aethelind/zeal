@@ -1,6 +1,10 @@
 # zeal
 Demo of a friend making app made for entrepreneurship class.
 
+## Features Coming Soon
+Account Creation
+User Matching
+Chat
 
 ## Install Instructions
 run this command if you don't already have ionic:
@@ -16,3 +20,4 @@ in chrome, right click the page and select "inspect," then toggle the device vie
 
 ## Example
 coming soon, a video demonstration of the app in its current state.
+
