@@ -1,0 +1,45 @@
+<ion-header> </ion-header>
+
+<ion-content>
+  <ion-img src="/assets/icon/zebra.png" class="center"></ion-img>
+  <div>
+    <h1 class="title-box">Zeal</h1>
+  </div>
+  <div class="login-box">
+    <ion-row>
+      <ion-col>
+        <ion-list class="padding-fix">
+          <ion-item>
+            <ion-input
+              type="text"
+              placeholder="Username"
+              [(ngModel)]="username"
+            ></ion-input>
+          </ion-item>
+          <br />
+          <ion-item>
+            <ion-input
+              type="password"
+              placeholder="Password"
+              [(ngModel)]="password"
+            ></ion-input>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" color="dark" (click)="login()"
+          ><h3 class="login">Log In</h3></ion-button
+        >
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <h4 style="text-align:center;">
+          Don't have an account? <a href=""> Sign Up Now! </a>
+        </h4>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

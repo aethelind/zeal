@@ -1,5 +1,7 @@
 {
   "name": "zeal-demo",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

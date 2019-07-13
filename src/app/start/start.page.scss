@@ -1,0 +1,52 @@
+.center {
+  display: block;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 55%;
+}
+.login {
+  font-weight: bold;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.login-box {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  /*border-style: solid;
+  border-width: 5px;
+  border-radius: 30px;*/
+
+  padding: 5px;
+}
+
+.padding-fix {
+  padding-right: 16px;
+}
+
+.scroll-fix {
+  overflow-y: hidden;
+  --background: none;
+  //background-color: rgb(236, 236, 236);
+}
+
+ion-content {
+  --overflow: hidden;
+}
+
+.title-box {
+  text-align: center;
+  font-weight: bold;
+  font-size: 4em;
+  padding-bottom: 10px;
+  letter-spacing: 6px;
+  font-variant: small-caps;
+}
+
+ion-button {
+  --border-radius: 20px;
+}
