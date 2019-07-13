@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 import { AlertController } from "@ionic/angular";
+import { LoadingController } from "@ionic/angular";
 
 @Component({
   selector: "app-start",
@@ -11,7 +12,11 @@ export class StartPage implements OnInit {
   username: string = "";
   password: string = "";
 
-  constructor(public router: Router, public alert: AlertController) {}
+  constructor(
+    public router: Router,
+    public alert: AlertController,
+    public loadingController: LoadingController
+  ) {}
 
   ngOnInit() {}
 
@@ -24,7 +29,16 @@ export class StartPage implements OnInit {
       // display error
     } else {
       console.log("successful log in");
-      this.router.navigate(["/tabs/tab1"]);
+      const loading = await this.loadingController.create({
+        message: "Please Wait...",
+        duration: 1000
+      });
+      await loading.present();
+      const { role, data } = await loading.onDidDismiss();
+
+      this.router.navigate(["/tabs/tab3"]);
+      this.username = "";
+      this.password = "";
     }
   }
 
