@@ -2,9 +2,9 @@
 Demo of a friend making app made for entrepreneurship class.
 
 ## Features Coming Soon
-Account Creation
-User Matching
-Chat
+- Account Creation  
+- User Matching  
+- Chat
 
 ## Install Instructions
 run this command if you don't already have ionic:
@@ -15,9 +15,9 @@ after changing into the directory 'zeal':
 
 `ionic serve`
 
-this will run the app locally in your web browser.
+this will run the app locally in your web browser.  
 in chrome, right click the page and select "inspect," then toggle the device view at the top of the newly opened element inspector. this will display the app as it will look on a mobile device.
 
 ## Example
-coming soon, a video demonstration of the app in its current state.
+coming soon: a video demonstration of the app in its current state.
 
