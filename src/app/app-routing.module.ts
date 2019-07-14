@@ -8,7 +8,8 @@ const routes: Routes = [
   {
     path: "register",
     loadChildren: "./register/register.module#RegisterPageModule"
-  }
+  },
+  { path: 'register2', loadChildren: './register2/register2.module#Register2PageModule' }
 ];
 @NgModule({
   imports: [

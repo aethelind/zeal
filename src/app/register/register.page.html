@@ -2,17 +2,37 @@
   <ion-toolbar>
     <ion-title>register</ion-title>
   </ion-toolbar>
+  <ion-progress-bar value="0.14" color="danger"></ion-progress-bar>
 </ion-header>
 
 <ion-content>
-  <h1>Let's Build Your Profile!</h1>
+  <h1>My school is:</h1>
+  <br />
+  <ion-list>
+    <ion-radio-group [(ngModel)]="school">
+      <ion-list-header>
+        <ion-label>School</ion-label>
+      </ion-list-header>
 
-  <h3>
-    Ok boiz
-  </h3>
+      <ion-item>
+        <ion-label>Algonquin College</ion-label>
+        <ion-radio slot="start" value="alg"></ion-radio>
+      </ion-item>
 
-  <ion-button color="primary" size="large">Let's Start!</ion-button>
+      <ion-item>
+        <ion-label>Carleton University</ion-label>
+        <ion-radio slot="start" value="carl"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>University of Ottawa</ion-label>
+        <ion-radio slot="start" value="uo"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+  <br />
+  <ion-button expand="block" color="dark" (click)="next()"
+    ><h3 class="login">Continue</h3></ion-button
+  >
 </ion-content>
-<ion-footer>
-  <ion-progress-bar value="0.25" color="primary"></ion-progress-bar>
-</ion-footer>
+<ion-footer> </ion-footer>
