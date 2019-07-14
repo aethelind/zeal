@@ -19,5 +19,6 @@ this will run the app locally in your web browser.
 in chrome, right click the page and select "inspect," then toggle the device view at the top of the newly opened element inspector. this will display the app as it will look on a mobile device.
 
 ## Example
-coming soon: a video demonstration of the app in its current state.
+First prototype:  
+- https://www.youtube.com/watch?v=O6o5atE1jHQ
 
