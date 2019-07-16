@@ -1,0 +1,97 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>signup</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div style="padding: 15px">
+    <h1 class="title-box">Sign Up for Zeal</h1>
+  </div>
+  <ng-form>
+    <ion-grid style="padding: 10px">
+      <ion-col style="width: 100%">
+
+        <ion-item >
+          <ion-row>
+            <ion-input
+                    type="text"
+                    placeholder="First Name"
+                    [(ngModel)]="firstName"
+            ></ion-input>
+          </ion-row>
+        </ion-item>
+        <br />
+        <ion-item>
+          <ion-row>
+            <ion-input
+                    type="text"
+                    placeholder="Last Name"
+                    [(ngModel)]="lastName"
+            ></ion-input>
+          </ion-row>
+        </ion-item>
+
+        <br />
+        <ion-item>
+          <ion-row>
+            <ion-input
+                    type="text"
+                    placeholder="Email"
+                    [(ngModel)]="email"
+            ></ion-input>
+          </ion-row>
+        </ion-item>
+
+        <br />
+        <ion-item>
+          <ion-row>
+            <ion-input
+                    type="password"
+                    placeholder="Password"
+                    [(ngModel)]="password"
+            ></ion-input>
+          </ion-row>
+        </ion-item>
+
+        <br />
+        <ion-item>
+          <ion-row>
+            <ion-input
+                    placeholder="Date of Birth"
+                    [(ngModel)]="dob"
+            ></ion-input>
+          </ion-row>
+        </ion-item>
+
+        <br />
+        <ion-item>
+          <ion-row>
+            <ion-input
+                    type="text"
+                    placeholder="Address"
+                    [(ngModel)]="address"
+            ></ion-input>
+          </ion-row>
+        </ion-item>
+
+        <br />
+        <ion-item>
+          <ion-row>
+            <ion-input
+                    type="text"
+                    placeholder="Phone Number"
+                    [(ngModel)]="phoneNumber"
+            ></ion-input>
+          </ion-row>
+        </ion-item>
+
+      </ion-col>
+    </ion-grid>
+  </ng-form>
+
+  <ion-col>
+    <ion-button expand="block" color="dark" (click)="login()"
+    ><h3 class="login">Next</h3></ion-button>
+  </ion-col>
+</ion-content>
