@@ -10,7 +10,9 @@ const routes: Routes = [
     loadChildren: "./register/register.module#RegisterPageModule"
   },
   { path: 'register2', loadChildren: './register2/register2.module#Register2PageModule' },
-  { path: 'signup', loadChildren: './signup/signup.module#SignupPageModule' }
+  { path: 'signup', loadChildren: './signup/signup.module#SignupPageModule' },
+  { path: 'interests', loadChildren: './interests/interests.module#InterestsPageModule' },
+  { path: 'matches', loadChildren: './matches/matches.module#MatchesPageModule' }
 ];
 @NgModule({
   imports: [
