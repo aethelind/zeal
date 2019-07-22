@@ -7,6 +7,19 @@
 </ion-header>
 
 <ion-content>
+  <ion-card class="welcome-card">
+    <ion-img src="/assets/shapes.svg"></ion-img>
+    <ion-card-header>
+      <ion-card-subtitle>Get Started</ion-card-subtitle>
+      <ion-card-title>Welcome to Zeal!</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <h1>
+        Now that your account has been created, you'll want to start chatting
+        with your connections. Check them out in the chat tab.
+      </h1>
+    </ion-card-content>
+  </ion-card>
   <ion-list>
     <ion-list-header>
       <ion-label>My Profile</ion-label>
@@ -47,20 +60,48 @@
 
     <ion-item>
       <ion-label position="fixed">Interests</ion-label>
+      <ion-list>
+        <ion-item>
+          Food
+          <ion-checkbox color="primary" slot="start"></ion-checkbox>
+        </ion-item>
+        <ion-item>
+          <ion-checkbox
+            color="primary"
+            slot="start"
+            checked="true"
+          ></ion-checkbox>
+          Photography
+        </ion-item>
+        <ion-item>
+          <ion-checkbox
+            color="primary"
+            slot="start"
+            checked="true"
+          ></ion-checkbox>
+          Camping
+        </ion-item>
+        <ion-item>
+          <ion-checkbox color="primary" slot="start"></ion-checkbox>
+          Technology
+        </ion-item>
+        <ion-item>
+          <ion-checkbox color="primary" slot="start"></ion-checkbox>
+          Movies
+        </ion-item>
+        <ion-item>
+          <ion-checkbox color="primary" slot="start"></ion-checkbox>
+          Business
+        </ion-item>
+        <ion-item>
+          <ion-checkbox
+            color="primary"
+            slot="start"
+            checked="true"
+          ></ion-checkbox>
+          Anime
+        </ion-item>
+      </ion-list>
     </ion-item>
   </ion-list>
-
-  <ion-card class="welcome-card">
-    <ion-img src="/assets/shapes.svg"></ion-img>
-    <ion-card-header>
-      <ion-card-subtitle>Get Started</ion-card-subtitle>
-      <ion-card-title>Welcome to Zeal!</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <h1>
-        Now that your account has been created, you'll want to start chatting
-        with your connections. Check them out in the chat tab.
-      </h1>
-    </ion-card-content>
-  </ion-card>
 </ion-content>
