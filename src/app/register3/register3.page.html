@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Register</ion-title>
+  </ion-toolbar>
+  <ion-progress-bar value="0.2" color="danger"></ion-progress-bar>
+</ion-header>
+
+<ion-content>
+  <h1>Tell us about yourself.</h1>
+  <br />
+  <ion-list>
+    <ion-list-header>
+      <ion-label>My Profile</ion-label>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label position="fixed">Name</ion-label>
+      <ion-input placeholder="Sally Student"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="fixed">Gender</ion-label>
+      <ion-select
+        placeholder="Select One"
+        [interfaceOptions]="customPopoverOptions"
+        interface="popover"
+      >
+        <ion-select-option value="m">Male</ion-select-option>
+        <ion-select-option value="f">Female</ion-select-option>
+        <ion-select-option value="o">Other</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="fixed">Birthdate</ion-label>
+      <ion-datetime
+        displayFormat="MM/DD/YYYY"
+        min="1900-01-01"
+        value="2019-07-20"
+      ></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="fixed">Bio</ion-label>
+      <ion-input placeholder="Introduce yourself!"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <br />
+  <ion-button expand="block" color="dark"
+    ><h3 class="login" (click)="next()">Continue</h3></ion-button
+  >
+</ion-content>
