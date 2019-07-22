@@ -13,5 +13,5 @@ import { Tab2Page } from './tab2.page';
     RouterModule.forChild([{ path: '', component: Tab2Page }])
   ],
   declarations: [Tab2Page]
-})
+}) 
 export class Tab2PageModule {}

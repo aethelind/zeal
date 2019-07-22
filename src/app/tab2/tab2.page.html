@@ -7,34 +7,149 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-item>
-      <ion-avatar slot="start">
-        <img src="assets/images/boy.jpg" />
-      </ion-avatar>
-      <ion-label>
-        <h3>Boy</h3>
-        <p>I'm a 25 year old student at uofO</p>
-        <p>My interests are but not limited to anime swimming and drinking</p>
-      </ion-label>
-      <ion-icon slot="end" name="logo-instagram"></ion-icon>
-      <ion-icon slot="end" name="logo-facebook"></ion-icon>
-      <ion-icon slot="end" name="logo-whatsapp"></ion-icon>
-    </ion-item>
+  <ion-card class="welcome-card" id="dan">
+    <ion-card-header>
+      <ion-img src="/assets/images/dan_header.png"></ion-img>
+      <ion-card-title>Dan Smith</ion-card-title>
+      <ion-card-subtitle>65% Match</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <h1>
+        Hey! I'm new to Ottawa and looking for someone to chill with.<br /><br />
+      </h1>
+      <h2>
+        You both like <b>photography</b> and <b>anime</b>.<br />
+        Dan also likes <b>movies</b> and <b>food</b>.
+      </h2>
+      <br />
+      <div style="text-align: center;" id="like1">
+        <ion-icon name="checkmark-circle" style="color: #0ec254;"></ion-icon>
+        <ion-icon
+          name="fastforward"
+          style="color: #3171e0;margin-left:0.75em"
+          (click)="remove()"
+        ></ion-icon>
+      </div>
 
-    <ion-item>
-      <ion-avatar slot="start">
-        <img src="assets/images/girl.jpg" />
-      </ion-avatar>
-      <ion-label>
-        <h3>Girl</h3>
-        <p>I'm a 20 year old student at carleton</p>
-        <p>I love working hard to stack my bread up</p>
-      </ion-label>
+      <br />
+      <div style="text-align: center;" id="socials1">
+        <a href="https://www.instagram.com/cats_of_instagram/">
+          <ion-icon name="logo-instagram" style="color: #222428;"></ion-icon>
+          <ion-icon
+            name="logo-facebook"
+            style="color: #222428;margin-left:0.75em;"
+          ></ion-icon>
 
-      <ion-icon slot="end" name="logo-instagram"></ion-icon>
-      <ion-icon slot="end" name="logo-facebook"></ion-icon>
-      <ion-icon slot="end" name="logo-whatsapp"></ion-icon>
-    </ion-item>
-  </ion-list>
+          <ion-icon
+            name="logo-whatsapp"
+            style="color: #222428;margin-left:0.75em;"
+          ></ion-icon
+        ></a>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="welcome-card">
+    <ion-card-header>
+      <ion-img src="/assets/images/boy_header.png"></ion-img>
+      <ion-card-title>Steve Jobs</ion-card-title>
+      <ion-card-subtitle>85% Match</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <h1>
+        Hey! I'm new to Ottawa and looking for someone to chill with.<br /><br />
+      </h1>
+      <h2>
+        You both like <b>camping</b> and <b>photography</b>.<br />
+        Steve also likes <b>technology</b> and <b>movies</b>.
+      </h2>
+      <br />
+      <div style="text-align: center;" id="like">
+        <ion-icon
+          name="checkmark-circle"
+          style="color: #0ec254;"
+          (click)="revealSocials()"
+        ></ion-icon>
+        <ion-icon
+          name="fastforward"
+          style="color: #3171e0;margin-left:0.75em"
+          (click)="remove()"
+        ></ion-icon>
+      </div>
+
+      <br />
+      <div style="text-align: center;" id="socials">
+        <a href="https://www.instagram.com/cats_of_instagram/">
+          <ion-icon name="logo-instagram" style="color: #222428;"></ion-icon>
+          <ion-icon
+            name="logo-facebook"
+            style="color: #222428;margin-left:0.75em;"
+          ></ion-icon>
+
+          <ion-icon
+            name="logo-whatsapp"
+            style="color: #222428;margin-left:0.75em;"
+          ></ion-icon
+        ></a>
+      </div>
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="welcome-card" id="girl">
+    <ion-card-header>
+      <ion-img src="/assets/images/girl_header.png"></ion-img>
+      <ion-card-title>Jane Doe</ion-card-title>
+      <ion-card-subtitle>70% Match</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <h1>
+        Hey! I'm new to Ottawa and looking for someone to chill with.<br /><br />
+      </h1>
+      <h2>
+        You both like <b>anime</b> and <b>camping</b>.<br />
+        Jane also likes <b>business</b> and <b>hiking</b>.
+      </h2>
+      <br />
+      <div style="text-align: center;" id="like1">
+        <ion-icon
+          name="checkmark-circle"
+          style="color: #0ec254;"
+          (click)="revealSocials()"
+        ></ion-icon>
+        <ion-icon
+          name="fastforward"
+          style="color: #3171e0;margin-left:0.75em"
+          (click)="remove2()"
+        ></ion-icon>
+      </div>
+
+      <br />
+      <div style="text-align: center;" id="socials1">
+        <a href="https://www.instagram.com/cats_of_instagram/">
+          <ion-icon name="logo-instagram" style="color: #222428;"></ion-icon>
+          <ion-icon
+            name="logo-facebook"
+            style="color: #222428;margin-left:0.75em;"
+          ></ion-icon>
+
+          <ion-icon
+            name="logo-whatsapp"
+            style="color: #222428;margin-left:0.75em;"
+          ></ion-icon
+        ></a>
+      </div>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-img src="/assets/images/zebras.jpg"></ion-img>
+    <ion-card-header>
+      <ion-card-title>Refer a friend!</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <h1>
+        Out of matches today? Check out our Premium deal below!<br /><br />
+        <ion-button color="tertiary">More Details </ion-button>
+      </h1>
+    </ion-card-content>
+    <br />
+  </ion-card>
 </ion-content>
