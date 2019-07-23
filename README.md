@@ -2,8 +2,8 @@
 Demo of a friend making app made for entrepreneurship class.
 
 ## Features Coming Soon
-- Account Creation  
-- User Matching  
+- ~~Account Creation~~ Done!
+- ~~User Matching~~  Done!
 - Chat
 
 ## Install Instructions
@@ -18,7 +18,10 @@ after changing into the directory 'zeal':
 this will run the app locally in your web browser.  
 in chrome, right click the page and select "inspect," then toggle the device view at the top of the newly opened element inspector. this will display the app as it will look on a mobile device.
 
-## Example
+## Demonstration Videos
 First prototype:  
 - https://www.youtube.com/watch?v=O6o5atE1jHQ
+
+Second prototype:
+- https://www.youtube.com/watch?v=C9scoO_gZRM&vq=hd1080
 
